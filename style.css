@@ -11,6 +11,7 @@
 }
 html{
     overflow-x: hidden;
+   
 }
 
 .bar{
@@ -29,10 +30,16 @@ display: none;
     display: none;
 }
 nav{
+    
+    position: fixed;
+    z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  top: 0;
    
-    padding: 20px 200px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,9 +116,10 @@ header a:hover{
 }
 
 .games{
-    padding: 100px 0;
+   
     width: 100%;
-    height: 160vh;
+    
+   
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(ps4bg.jpg);
     background-position: center;
     background-size: cover;
@@ -128,8 +136,7 @@ header a:hover{
 .box{
     margin: 150px 100px ;
     border-radius: 20px;
-    position: relative;
-    z-index: 999;
+   
  
     
 
@@ -192,9 +199,9 @@ footer p{
     }
     .bar.toggle{
         background: url(delete.png);
-    height: 30px;
-    width: 30px;
-    background-size:30px;
+    height: 20px;
+    width: 20px;
+    background-size:20px;
     cursor: pointer;
     position: relative;
     z-index: 1000;
@@ -202,19 +209,20 @@ footer p{
     }
     nav{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      
         padding: 20px 60px;
+      
+      
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
 .nav{
-    transition: 0.5s ease;
+    
         position: absolute;
         top: 0;
         left:100%;
-        height: 85vh;
+        height: 100vh;
 
         width: 100%;
         display: flex;
@@ -222,7 +230,7 @@ footer p{
         flex-direction: column;
         align-items: center;
         background-color: #020B2F;
-        z-index: 999;
+      
        
   
 }
@@ -253,23 +261,24 @@ nav ul li a:hover{
 
 header{
     height: 90vh;
+    width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(pxfuel.jpg);
   
-    padding: 200px 200px;
+    padding: 200px 60px;
    
 
 }
 header h2{
-    font-size: 42px;
+    font-size: 31px;
 
 }
 header p{
     margin: 10px 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 header a{
-    font-size: 22px;
+    font-size: 18px;
     padding: 20px 32px;
     margin-top: 15px;
     display: inline-block;
@@ -286,7 +295,7 @@ header a:hover{
 
 .heading{
     position: relative;
-  height: 10vh;
+
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 999;
   
@@ -303,9 +312,9 @@ header a:hover{
 }
 
 .games{
-    padding: 100px 0;
+    padding: 0px 0;
     width: 100%;
-    height: 160vh;
+
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(ps4bg.jpg);
     background-position: center;
     background-size: cover;
@@ -320,16 +329,11 @@ header a:hover{
 
 
 .box{
-    margin: 150px 100px ;
+    margin: 130px 20px ;
     border-radius: 20px;
-    position: relative;
-    z-index: 999;
- 
-    
 
-
-    width: 300px;
-    height: 300px;
+    width: 130px;
+    height: 130px;
 }
 .box img{
     border-radius: 20px 20px 0 0;
@@ -350,6 +354,11 @@ display: block;
     color: #000;
    
 
+    
+}
+
+.box .info h3{
+    font-size: 16px;
 }
 .box .info h2{
     display: inline-block;
