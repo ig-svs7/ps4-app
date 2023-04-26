@@ -10,6 +10,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.bar{
+display: none;
+    background: url(menu.png);
+    height: 30px;
+    width: 30px;
+    background-size:30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
 
 .icon{
     color: #000;
@@ -32,7 +42,8 @@ nav ul li{
     
 }
 nav ul li a{
-    margin: 0 20px;
+    padding: 0 30px;
+ 
     color: #000;
     font-size: 18px;
     font-weight: 100;
@@ -170,28 +181,40 @@ footer p{
 }
 
 @media screen and (max-width:900px) {
-    .icon{
+    .bar{
+    
         display: block;
-    }
-    
-nav{
-  
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    }
+    .bar.toggle{
+        background: url(delete.png);
+    height: 30px;
+    width: 30px;
+    background-size:30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+
+    }
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 .nav{
     transition: 0.5s ease;
-        position: absolute;
+        position: fixed;
         top: 0;
+        left:500px;
         
-        height: 85vh;
+       
+     
+        
+        height: 100vh;
 
         width: 100%;
         display: flex;
@@ -199,7 +222,11 @@ nav{
         flex-direction: column;
         align-items: center;
         background-color: #020B2F;
+        z-index: 999;
   
+}
+.nav.tog{
+    left: 0;
 }
 nav h1{
     font-size: 20px;
@@ -207,13 +234,15 @@ nav h1{
 }
 nav ul li{
     display:inline-block;
+    margin: 20px 0;
     
 }
 nav ul li a{
     margin: 0 20px;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 100;
+    
 }
 nav ul li a:hover{
     transition: 0.5s ease;
