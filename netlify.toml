@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/ps4.html"
+status = 200
